@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bilardo</title>
+<style>
+:root{color-scheme:dark}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#12100e;color:#efe6d8;font:15px/1.4 Georgia,serif}
+#hud,#c{width:min(100%,calc(80vh*1.83))}
+#hud{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:0 10px;box-sizing:border-box}
+#c{display:block;aspect-ratio:1100/600;touch-action:none;cursor:crosshair}
+button{background:#c9a15a;color:#1b130a;border:0;border-radius:6px;padding:8px 14px;font:inherit;cursor:pointer}
+button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+</style></head><body>
+<div id="hud"><span id="st"></span><span><button id="cp">Davet linkini kopyala</button> <button id="rm" hidden>Tekrar oyna</button></span></div>
+<canvas id="c"></canvas>
+<script src="physics.js"></script><script src="pool.js"></script>
+</body></html>
